@@ -16,4 +16,6 @@ helm init --upgrade
 
 kubectl --namespace kube-system patch deploy tiller-deploy \
  -p '{"spec":{"template":{"spec":{"serviceAccount":"tiller"}}}}' 
+ 
+ helm repo update
 ```
